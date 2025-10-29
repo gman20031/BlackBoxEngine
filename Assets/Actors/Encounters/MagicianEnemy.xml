@@ -1,0 +1,13 @@
+<Actor Name="Magician">
+    <Component Name="EncounterComponent">
+        <Name>Magician</Name>
+        <HP>13</HP>
+        <Attack>11</Attack>
+        <Defense>4</Defense>
+        <XPReward>9</XPReward>
+        <GoldReward>11</GoldReward>
+        <Agility>12</Agility>
+		<Dodge>1</Dodge>
+        <SpriteFile>../Assets/Sprites/Magician.png</SpriteFile> 
+    </Component>
+</Actor>

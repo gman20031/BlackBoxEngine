@@ -1,0 +1,40 @@
+<Actor Name="TileMapActor">
+    <Component Name="TransformComponent">
+        <Position>
+            <X>0</X>
+            <Y>0</Y>
+        </Position>
+        <Rotation>0</Rotation>
+    </Component>
+    <Component Name="TileMapComponent">
+        <TileSize>16</TileSize>
+		<AnchorPoint>kTopLeft</AnchorPoint>
+		<HasEncounters>false</HasEncounters>
+		<TileMap>
+			<row>%%%%%%%%%%%%</row>
+			<row>%BB%BBBB%%B%</row>
+			<row>%%B%B%%BBBB%</row>
+			<row>%BBBBBBB%%B%</row>
+			<row>%%B%%%B%%BB%</row>
+			<row>%BB%BBB%BB%%</row>
+			<row>%B%%%%BBB%%%</row>
+			<row>%BBBBBB%B%B%</row>
+			<row>%%%B%B%%BBB%</row>
+			<row>%%BBBBB%B%B%</row>
+			<row>%%B%B%BBB%B%</row>
+			<row>%%%%%%%%%%%%</row>
+		</TileMap>
+    </Component>
+</Actor>
+  <!-- StairUp -->
+<Actor SeperateFile = "true">
+    <FilePath>../Assets/Actors/StairUp1Actor.xml</FilePath>
+</Actor>
+  <!-- StairDown -->
+<Actor SeperateFile = "true">
+    <FilePath>../Assets/Actors/StairDownActor.xml</FilePath>
+</Actor>
+  <!-- Player -->
+<Actor SeperateFile = "true">
+    <FilePath>../Assets/Actors/PlayerActor.xml</FilePath>
+</Actor>

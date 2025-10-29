@@ -1,0 +1,28 @@
+<Actor Name="ChestActor">
+    <Component Name="TransformComponent">
+        <Position>
+            <X>160</X>
+            <Y>80</Y>
+        </Position>
+        <Rotation>0</Rotation>
+    </Component>
+    <Component Name="AABBColliderComponent">
+        <width>0</width>
+        <height>0</height>
+        <blockable>false</blockable>
+        <enabled>true</enabled>
+    </Component>
+    <Component Name="SpriteComponent">
+        <width>16</width>
+        <height>16</height>
+        <UseFullImage>false</UseFullImage>
+        <TextureOffset>
+            <X>68</X>
+            <Y>0</Y>
+            <W>16</W>
+            <H>16</H>
+        </TextureOffset>
+        <filePath>../Assets/Tiles/FullTileSheet.png</filePath>
+    </Component>
+    <Component Name="TakeComponent"/>
+</Actor>

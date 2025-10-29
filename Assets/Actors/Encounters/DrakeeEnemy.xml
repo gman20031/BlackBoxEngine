@@ -1,0 +1,13 @@
+<Actor Name="DrakeeEnemy">
+    <Component Name="EncounterComponent">
+        <Name>Drakee</Name>
+        <HP>6</HP>
+        <Attack>9</Attack>
+        <Defense>2</Defense>
+        <XPReward>2</XPReward>
+        <GoldReward>2</GoldReward>
+        <Agility>6</Agility>
+		<Dodge>1</Dodge>
+        <SpriteFile>../Assets/Sprites/Drakee.png</SpriteFile> 
+    </Component>
+</Actor>

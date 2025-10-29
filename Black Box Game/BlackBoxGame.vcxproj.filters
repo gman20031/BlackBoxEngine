@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="BlackBoxGame.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ExampleComponent.cpp" />
+    <ClCompile Include="GameComponentRegistrar.cpp" />
+    <ClCompile Include="TileSystem\TileMapComponent.cpp" />
+    <ClCompile Include="ScreenCentered.cpp" />
+    <ClCompile Include="TileSystem\TileActorManager.cpp" />
+    <ClCompile Include="TileSystem\TileInfoComponent.cpp" />
+    <ClCompile Include="PlayerMovementComponent.cpp" />
+    <ClCompile Include="Interactions\InteractionComponent.cpp" />
+    <ClCompile Include="Interactions\StairComponent.cpp" />
+    <ClCompile Include="Interactions\TalkComponent.cpp" />
+    <ClCompile Include="Interactions\TakeComponent.cpp" />
+    <ClCompile Include="Encounters\EncounterHandler.cpp" />
+    <ClCompile Include="Encounters\EncounterComponent.cpp" />
+    <ClCompile Include="PlayerStatsComponent.cpp" />
+    <ClCompile Include="InventoryComponent.cpp" />
+    <ClCompile Include="StartGameHandler.cpp" />
+    <ClCompile Include="CheatComponent.cpp" />
+    <ClCompile Include="InterfaceScrollingText.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlackBoxGame.h" />
+    <ClInclude Include="ExampleComponent.h" />
+    <ClInclude Include="TileSystem\TileMapComponent.h" />
+    <ClInclude Include="ScreenCentered.h" />
+    <ClInclude Include="TileSystem\TileInfoComponent.h" />
+    <ClInclude Include="TileSystem\TileActorManager.h" />
+    <ClInclude Include="PlayerMovementComponent.h" />
+    <ClInclude Include="Interactions\InteractionComponent.h" />
+    <ClInclude Include="Interactions\StairComponent.h" />
+    <ClInclude Include="Interactions\TalkComponent.h" />
+    <ClInclude Include="Interactions\TakeComponent.h" />
+    <ClInclude Include="Encounters\EncounterHandler.h" />
+    <ClInclude Include="Encounters\EncounterComponent.h" />
+    <ClInclude Include="PlayerStatsComponent.h" />
+    <ClInclude Include="InventoryComponent.h" />
+    <ClInclude Include="GameMessages.h" />
+    <ClInclude Include="StartGameHandler.h" />
+    <ClInclude Include="LevelFilePaths.h" />
+    <ClInclude Include="CheatComponent.h" />
+    <ClInclude Include="InterfaceScrollingText.h" />
+  </ItemGroup>
+</Project>

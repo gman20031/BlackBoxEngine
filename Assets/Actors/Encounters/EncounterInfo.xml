@@ -1,0 +1,67 @@
+<OverworldEncounterInfo>
+	<EncounterAreaStartX>7</EncounterAreaStartX>
+	<EncounterAreaStartY>8</EncounterAreaStartY>
+	<EncounterZoneSize>17</EncounterZoneSize>
+	<EncounterWidth>5</EncounterWidth>
+	<EncounterGrid>
+		<element>3</element>  
+		<element>3</element>
+		<element>2</element>
+		<element>2</element>
+		<element>3</element>
+		<!-- row 2 -->
+		<element>3</element>
+		<element>3</element>
+		<element>3</element>
+		<element>3</element>
+		<element>2</element>
+		<!-- row 3 -->
+		<element>3</element>
+		<element>1</element>
+		<element>0</element>
+		<element>0</element>
+		<element>1</element>
+		<!-- row 4 -->
+		<element>3</element>
+		<element>1</element>
+		<element>1</element>
+		<element>0</element>
+		<element>3</element>
+		<!-- row 5 -->
+		<element>1</element>
+		<element>1</element>
+		<element>1</element>
+		<element>1</element>
+		<element>1</element>
+	</EncounterGrid>
+	<EncounterMap>
+		<encounterKey>
+			<encounterInfo>../Assets/Actors/Encounters/SlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/SlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/SlimeEnemy.xml</encounterInfo>
+		</encounterKey>
+		<encounterKey>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/SlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/DrakeeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+		</encounterKey>
+		<encounterKey>
+			<encounterInfo>../Assets/Actors/Encounters/SlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/GhostEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/DrakeeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/GhostEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+		</encounterKey>
+		<encounterKey>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/RedSlimeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/DrakeeEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/GhostEnemy.xml</encounterInfo>
+			<encounterInfo>../Assets/Actors/Encounters/MagicianEnemy.xml</encounterInfo>
+		</encounterKey>
+	</EncounterMap>
+</OverworldEncounterInfo>

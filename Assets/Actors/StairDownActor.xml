@@ -1,0 +1,37 @@
+<Actor Name="StairDownActor">
+    <Component Name="TransformComponent">
+        <Position>
+            <X>160</X>
+            <Y>160</Y>
+        </Position>
+        <Rotation>0</Rotation>
+    </Component>
+    <Component Name="AABBColliderComponent">
+        <width>0</width>
+        <height>0</height>
+        <blockable>false</blockable>
+        <enabled>true</enabled>
+    </Component>
+    <Component Name="SpriteComponent">
+        <width>16</width>
+        <height>16</height>
+        <UseFullImage>false</UseFullImage>
+        <TextureOffset>
+            <X>102</X>
+            <Y>0</Y>
+            <W>16</W>
+            <H>16</H>
+        </TextureOffset>
+        <filePath>../Assets/Tiles/FullTileSheet.png</filePath>
+    </Component>
+    <Component type="BaseStairComponent">
+        <TargetLevel>../Assets/Levels/Cave2Level.xml</TargetLevel>
+        <SpawnX>144</SpawnX>
+        <SpawnY>160</SpawnY>
+        <Fade>1.0</Fade>
+        <AutoUse>false</AutoUse>
+        <MusicTrack>../Assets/Audio/07DragonQuest1-DarkDungeon~Floor2.wav</MusicTrack>
+        <SoundTrack>../Assets/Audio/30DragonQuest1-StairsDown.wav</SoundTrack>
+        <Volume>0.4</Volume>
+    </Component>
+</Actor>

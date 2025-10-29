@@ -1,0 +1,37 @@
+<Actor Name="StairUp1Actor">
+    <Component Name="TransformComponent">
+        <Position>
+            <X>16</X>
+            <Y>16</Y>
+        </Position>
+        <Rotation>0</Rotation>
+    </Component>
+    <Component Name="AABBColliderComponent">
+        <width>0</width>
+        <height>0</height>
+        <blockable>false</blockable>
+        <enabled>true</enabled>
+    </Component>
+    <Component Name="SpriteComponent">
+        <width>16</width>
+        <height>16</height>
+        <UseFullImage>false</UseFullImage>
+        <TextureOffset>
+            <X>119</X>
+            <Y>0</Y>
+            <W>16</W>
+            <H>16</H>
+        </TextureOffset>
+        <filePath>../Assets/Tiles/FullTileSheet.png</filePath>
+    </Component>
+    <Component type="BaseStairComponent">
+        <TargetLevel>../Assets/Levels/Overworld.xml</TargetLevel>
+        <SpawnX>576</SpawnX>
+        <SpawnY>336</SpawnY>
+        <Fade>1.0</Fade>
+        <AutoUse>false</AutoUse>
+        <MusicTrack>../Assets/Audio/05DragonQuest1-KingdomofAlefgard.wav</MusicTrack>
+        <SoundTrack>../Assets/Audio/29DragonQuest1-StairsUp.wav</SoundTrack>
+        <Volume>0.4</Volume>
+    </Component>
+</Actor>
