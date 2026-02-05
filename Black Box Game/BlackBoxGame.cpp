@@ -2,27 +2,25 @@
 
 using namespace BlackBoxEngine;
 
-#include "LevelFilePaths.h"
-
 #include <cassert>
+
+#include "Actors/Card.h"
 
 void BlackBoxGame::InitGame()
 {
 	BB_LOG(LogType::kMessage, "Game starting");
-    m_pEngineManager->GetWindow()->SetWindowIcon("../Assets/Sprites/DragonQuestIcon.png");
+    
+    MakeCard();
+    //m_pEngineManager->m_pActorManager->LoadLevel( "../Assets/Levels/ExampleLevel.xml" );
 
-    m_pEngineManager->m_pActorManager->LoadLevel(kOverworldLevel);
-    m_gameStarter.Start();
     m_pEngineManager->SetGameUpdate( [this]() { GameUpdate(); } );
 }
 
 BlackBoxGame::BlackBoxGame()
     : m_pEngineManager(BlackBoxManager::NewSingleton())
-    , m_pTileActorManager(new TileActorManager)
-    , m_gameStarter("../Assets/Actors/StartingPlayerInformation.xml")
 {
     m_pEngineManager->CreateWindow(
-        "Dragon Quest Clone", kDefaultXPos, kDefaultYPos, kDefaultWidth, kDefaultHeight, 0
+        "Dragon Quest Clone", kDefaultXPos, kDefaultYPos, kDefaultWidth, kDefaultHeight, BB_Window::kWindowFlag_Resizable
     );
     BB_LOG(LogType::kMessage, "Window Created");
 }
@@ -31,9 +29,6 @@ BlackBoxGame::~BlackBoxGame()
 {
     if (m_pEngineManager)
         m_pEngineManager->DeleteSingleton();
-    if (m_pTileActorManager)
-        delete m_pTileActorManager;
-
 }
 
 void BlackBoxGame::Launch()
@@ -46,7 +41,7 @@ void BlackBoxGame::Launch()
 
 void BlackBoxGame::GameUpdate()
 {
-    m_pTileActorManager->Update();
+
 }
 
 BlackBoxGame* BlackBoxGame::NewSingleton()

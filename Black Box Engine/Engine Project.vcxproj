@@ -219,12 +219,14 @@
     <ClCompile Include="Actors\Collision\ColliderBorder.cpp" />
     <ClCompile Include="Actors\Collision\CollisionManager.cpp" />
     <ClCompile Include="Actors\ComponentFactory.cpp" />
+    <ClCompile Include="Actors\EngineComponents\DragAndDropComponent.cpp" />
     <ClCompile Include="Actors\EngineComponents\LuaScriptComponent.cpp" />
     <ClCompile Include="Actors\EngineComponents\MovementBlocker.cpp" />
     <ClCompile Include="Actors\EngineComponents\MoverComponent.cpp" />
     <ClCompile Include="Actors\EngineComponents\ColliderDebugRenderer.cpp" />
     <ClCompile Include="Actors\EngineComponents\ColliderDebugRenderer.h" />
     <ClCompile Include="Actors\EngineComponents\PlayerCameraComponent.cpp" />
+    <ClCompile Include="Actors\EngineComponents\SimpleRectDrawComponent.cpp" />
     <ClCompile Include="Actors\EngineComponents\SimpleTextComponent.cpp" />
     <ClCompile Include="Actors\EngineComponents\SpriteComponent.cpp" />
     <ClCompile Include="Actors\EngineComponents\TransformComponent.cpp" />
@@ -487,10 +489,12 @@
     <ClInclude Include="Actors\Component.h" />
     <ClInclude Include="Actors\ComponentFactory.h" />
     <ClInclude Include="Actors\Collision\ColliderBorder.h" />
+    <ClInclude Include="Actors\EngineComponents\DragAndDropComponent.h" />
     <ClInclude Include="Actors\EngineComponents\LuaScriptComponent.h" />
     <ClInclude Include="Actors\EngineComponents\MovementBlocker.h" />
     <ClInclude Include="Actors\EngineComponents\MoverComponent.h" />
     <ClInclude Include="Actors\EngineComponents\PlayerCameraComponent.h" />
+    <ClInclude Include="Actors\EngineComponents\SimpleRectDrawComponent.h" />
     <ClInclude Include="Actors\EngineComponents\SimpleTextComponent.h" />
     <ClInclude Include="Actors\EngineComponents\SpriteComponent.h" />
     <ClInclude Include="Audio\AudioManager.h" />
@@ -501,6 +505,7 @@
     <ClInclude Include="Graphics\Text Rendering\Text.h" />
     <ClInclude Include="Graphics\Text Rendering\TextRenderer.h" />
     <ClInclude Include="Input\InputManager.h" />
+    <ClInclude Include="Input\MouseInputEvents.h" />
     <ClInclude Include="Interface\InterfaceButton.h" />
     <ClInclude Include="Interface\InterfaceManger.h" />
     <ClInclude Include="Interface\InterfaceText.h" />

@@ -1,0 +1,26 @@
+<Actor Name="BaseCard">
+    <Component Name="TransformComponent">
+        <Position>
+            <X>100</X>
+            <Y>200</Y>
+        </Position>
+        <Rotation>0</Rotation>
+    </Component>
+    <Component Name="CardLetteringComponent"/>
+    <Component Name="SimpleRectDrawComponent">
+        <isFilled>true</isFilled>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <w>25</w>
+            <h>50</h>
+        </rect>
+        <color>
+            <r>0</r>
+            <g>255</g>
+            <b>0</b>
+            <a>255</a>
+        </color>
+    </Component>
+    <Component Name="DragAndDropComponent"/>
+</Actor>

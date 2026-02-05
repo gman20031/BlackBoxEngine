@@ -29,8 +29,8 @@ namespace BlackBoxEngine
         FVector2 GetCenterPoint() const;
         FVector2 GetDimensions() const;
 
-        BB_FRectangle ConvertGameToScreen(const BB_FRectangle& gameRect) const;
-        BB_FRectangle ZoomScreenRect(const BB_FRectangle& gameRect) const;
+        [[nodiscard]] BB_FRectangle ConvertGameToScreen(const BB_FRectangle& gameRect) const;
+        [[nodiscard]] BB_FRectangle ZoomScreenRect(const BB_FRectangle& gameRect) const;
 
         void ShiftGamePositionToScreen( float* pX, float* pY ) const;
         FVector2 GetCameraWindowZoom(const BB_Window* pWindow) const;

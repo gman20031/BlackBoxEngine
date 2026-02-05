@@ -145,12 +145,13 @@ namespace BlackBoxEngine
         m_pInputTarget->m_keyDown.ClearListeners();
         m_pInputTarget->m_keyUp.ClearListeners();
         
-        m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.up,   [this]() {MoveCursor(kUp); });
-        m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.down, [this]() {MoveCursor(kDown); });
-        m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.right,[this]() {MoveCursor(kRight); });
-        m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.left, [this]() {MoveCursor(kLeft); });
-        m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.select, [this]() {SelectTargetedNode(); });
-        m_pInputTarget->m_keyUp.RegisterListener(m_keycodes.select, [this]() {DeSelectTargetNode(); });
+         
+        auto idDiscard = m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.up,   [this]() {MoveCursor(kUp); });
+        idDiscard = m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.down, [this]() {MoveCursor(kDown); });
+        idDiscard = m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.right,[this]() {MoveCursor(kRight); });
+        idDiscard = m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.left, [this]() {MoveCursor(kLeft); });
+        idDiscard = m_pInputTarget->m_keyDown.RegisterListener(m_keycodes.select, [this]() {SelectTargetedNode(); });
+        idDiscard = m_pInputTarget->m_keyUp.RegisterListener(m_keycodes.select, [this]() {DeSelectTargetNode(); });
     }
 
     void UserInterface::Start()

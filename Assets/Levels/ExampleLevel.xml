@@ -1,0 +1,4 @@
+<!-- Dragable Card -->
+<Actor SeperateFile = "true">
+    <FilePath>../Assets/Actors/BaseCard.xml</FilePath>
+</Actor>

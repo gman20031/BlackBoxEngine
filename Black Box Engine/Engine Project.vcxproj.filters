@@ -300,6 +300,12 @@
     <ClCompile Include="Audio\AudioPlayerComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Actors\EngineComponents\DragAndDropComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors\EngineComponents\SimpleRectDrawComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="System\ConsoleManip.h">
@@ -831,6 +837,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Audio\AudioPlayerComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\MouseInputEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\EngineComponents\DragAndDropComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors\EngineComponents\SimpleRectDrawComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

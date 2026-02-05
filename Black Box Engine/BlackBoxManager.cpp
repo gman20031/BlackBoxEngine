@@ -60,6 +60,15 @@ namespace BlackBoxEngine
             case SDL_EVENT_KEY_UP:
                 m_pInputManager->RemoveKeyDown((KeyCode)event.key.scancode);
                 break;
+            case SDL_EVENT_MOUSE_BUTTON_DOWN:
+                m_pInputManager->PushMouseDown( event.button.x , event.button.y );
+                break;
+            case SDL_EVENT_MOUSE_BUTTON_UP:
+                m_pInputManager->PushMouseUp( event.button.x, event.button.y );
+                break;
+            case SDL_EVENT_MOUSE_MOTION:
+                m_pInputManager->PushMouseMotion( event.motion.x, event.motion.y , event.motion.xrel, event.motion.yrel );
+                break;
             case SDL_EVENT_WINDOW_RESIZED:
                 m_pWindow->NotifyWindowResized(event.window.data1, event.window.data2);
                 break;

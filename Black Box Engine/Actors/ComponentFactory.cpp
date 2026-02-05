@@ -10,6 +10,8 @@
 #include "EngineComponents/LuaScriptComponent.h"
 #include "EngineComponents/SimpleTextComponent.h"
 #include "EngineComponents/PlayerCameraComponent.h"
+#include "EngineComponents/DragAndDropComponent.h"
+#include "EngineComponents/SimpleRectDrawComponent.h"
 #include "Collision/AABBColliderComponent.h"
 #include "../Audio/AudioPlayerComponent.h"
 
@@ -28,6 +30,8 @@ namespace BlackBoxEngine
         ComponentFactory::Registrar<SimpleTextComponent>,
         ComponentFactory::Registrar<PlayerCameraComponent>,
         ComponentFactory::Registrar<AudioPlayerComponent>,
+        ComponentFactory::Registrar<DragAndDropComponent>,
+        ComponentFactory::Registrar<SimpleRectDrawComponent>,
         ComponentFactory::Registrar<MusicPlayer>
     > EngineRegistrar;
 

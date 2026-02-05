@@ -12,7 +12,6 @@ General Idea of this pattern:
 
 #include "Log.h"
 
-
 namespace BlackBoxEngine
 {
     template<class Type>
@@ -46,7 +45,7 @@ namespace BlackBoxEngine
          * event is pushed using PushEvent()
          * @return The key used for listener lookup and removal.
          */
-        CallbackId RegisterListener(const Event& event , Listener&& callbackFunction);
+        [[nodiscard]] CallbackId RegisterListener(const Event& event , Listener&& callbackFunction);
 
         // Removal
         /**
@@ -68,7 +67,7 @@ namespace BlackBoxEngine
 
         // Checking 
         bool IsListeningFor(const Event& event);
-        bool ContainsCallback( const CallbackId );
+        bool ContainsCallback( const CallbackId id);
 
         // Sending
         /**
@@ -157,6 +156,19 @@ namespace BlackBoxEngine
         if (it == m_eventMap.end())
             return false;
         return true;
+    }
+
+    template<class Listener, Comparable Event, std::integral CallbackId>
+    inline bool BB_Observer<Listener, Event, CallbackId>::ContainsCallback( const CallbackId id )
+    {
+        for ( auto& [event, map] : m_eventMap )
+        {
+            auto it = map.find( id );
+            if ( it == map.end() )
+                continue;
+            return true;
+        }
+        return false;
     }
 
 };

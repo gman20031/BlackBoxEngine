@@ -88,8 +88,12 @@ namespace BlackBoxEngine
         kCount
     };
 
+
     namespace StructHelpers
     {
+        void ConvertOffsetToAnchorPoint( float& newX, float& newY, BB_AnchorPoint anchor, const BB_FRectangle& rect );
+        bool RectangleContainsPoint( const BB_FRectangle& rect, const BB_FPoint& point );
+
         inline static const char* s_gAnchorPointToString[] =
         {
             "kTopLeft",

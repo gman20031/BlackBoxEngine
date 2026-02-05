@@ -186,48 +186,14 @@ copy "$(solutiondir)Black Box Engine\libraries\SDL3-3.3\lib\x64\SDL3_mixer.dll" 
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Actors\Card.cpp" />
+    <ClCompile Include="Actors\GameComponentRegistrar.cpp" />
     <ClCompile Include="BlackBoxGame.cpp" />
-    <ClCompile Include="CheatComponent.cpp" />
-    <ClCompile Include="ExampleComponent.cpp" />
-    <ClCompile Include="GameComponentRegistrar.cpp" />
-    <ClCompile Include="Interactions\InteractionComponent.cpp" />
-    <ClCompile Include="InterfaceScrollingText.cpp" />
-    <ClCompile Include="InventoryComponent.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PlayerMovementComponent.cpp" />
-    <ClCompile Include="PlayerStatsComponent.cpp" />
-    <ClCompile Include="ScreenCentered.cpp" />
-    <ClCompile Include="Interactions\StairComponent.cpp" />
-    <ClCompile Include="Interactions\TakeComponent.cpp" />
-    <ClCompile Include="Interactions\TalkComponent.cpp" />
-    <ClCompile Include="Encounters\EncounterComponent.cpp" />
-    <ClCompile Include="Encounters\EncounterHandler.cpp" />
-    <ClCompile Include="StartGameHandler.cpp" />
-    <ClCompile Include="TileSystem\TileActorManager.cpp" />
-    <ClCompile Include="TileSystem\TileInfoComponent.cpp" />
-    <ClCompile Include="TileSystem\TileMapComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Actors\Card.h" />
     <ClInclude Include="BlackBoxGame.h" />
-    <ClInclude Include="CheatComponent.h" />
-    <ClInclude Include="ExampleComponent.h" />
-    <ClInclude Include="GameMessages.h" />
-    <ClInclude Include="Interactions\InteractionComponent.h" />
-    <ClInclude Include="InterfaceScrollingText.h" />
-    <ClInclude Include="InventoryComponent.h" />
-    <ClInclude Include="LevelFilePaths.h" />
-    <ClInclude Include="PlayerMovementComponent.h" />
-    <ClInclude Include="PlayerStatsComponent.h" />
-    <ClInclude Include="ScreenCentered.h" />
-    <ClInclude Include="Interactions\StairComponent.h" />
-    <ClInclude Include="Interactions\TakeComponent.h" />
-    <ClInclude Include="Interactions\TalkComponent.h" />
-    <ClInclude Include="Encounters\EncounterComponent.h" />
-    <ClInclude Include="Encounters\EncounterHandler.h" />
-    <ClInclude Include="StartGameHandler.h" />
-    <ClInclude Include="TileSystem\TileActorManager.h" />
-    <ClInclude Include="TileSystem\TileInfoComponent.h" />
-    <ClInclude Include="TileSystem\TileMapComponent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
